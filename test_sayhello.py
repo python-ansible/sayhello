@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+globals()# -*- coding: utf-8 -*-
 """
     :author: Wang Zelin (王泽霖)
     :url: 
