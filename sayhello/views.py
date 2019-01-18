@@ -17,7 +17,7 @@ def index():
     if form.validate_on_submit():
         name = form.name.data
         body = form.body.data
-        message = Message(name=name,body=body)
+        message = Message(name=name, body=body)
         db.session.add(message)
         db.session.commit()
         flash('Your message have been sent to the world!')

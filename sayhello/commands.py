@@ -19,7 +19,7 @@ def initdb(drop):
         db.drop_all()
         click.echo('Drop tables.')
     db.create_all()
-    click.echo('Initialize database.')
+    click.echo('Initialized database.')
 
 @app.cli.command()
 @click.option('--count', default=20, help='Create fake messages,default is 20.')
@@ -42,5 +42,5 @@ def forge(count):
         db.session.add(message)
 
     db.session.commit()
-    click.echo('Create %d fake messages.' % count)
+    click.echo('Created %d fake messages.' % count)
 
